@@ -1,0 +1,198 @@
+style.css
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* css variables */
+:root{
+    --navbar-height:59px;
+    
+
+}
+/* Navigation Bar */
+#navbar{
+    display:flex;
+    align-items: center;
+    position: relative;
+    top: opx;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0.4 ;
+    z-index: -1;
+}
+
+
+/*navigation bar : Logo and image  */
+#logo{
+    margin:10px 34px;
+
+}
+
+#logo img{
+    height : 59px;
+    margin: 3px 6px;
+
+}
+
+
+/* navigation bar: list styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+    
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 578px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    /* background-color: url('../phtos/IMG-20240207-WA0045.jpg') no-repeat center center/cover; */
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0.89 ;
+    z-index: -1;
+    
+    
+}
+#home h1{
+    color: black;
+    text-align: center;
+}
+
+#home p{
+    color: red;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    color: #fff;
+}
+.h-secondary
+{
+    font-size: 2.3rem;
+    font-family: 'Bree Serif', serif;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+/* animation */
+.maindiv{
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    transform: translate(-50% , -50%);
+    background-image:url(../phtos/logo.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 5px  white;
+    animation: slider 25s infinite linear;
+    /* z-index: -0; */
+    /* padding: 20px; */
+    
+    
+}
+@keyframes slider{
+    0%{background-image:url(../phtos/logo.jpg);}
+    25%{background-image:url(../phtos/students\ pic1.jpg);}
+    55%{background-image:url(../phtos/n\ paper\ 1.jpg);}
+    
+    
+
+    75%{background-image:url(../phtos/students\ pic\ 2.jpg  );}
+   
+
+}
+/* images */
+.column
+{
+    float: left;
+    width: 40%;
+    padding:0px;
+    margin-left: 5%;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+    
+}
+/* footer section */
+.footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    padding: 40px;
+}
+
+.footer-first{
+    padding: 5px 20%;
+}
+
+.footer-button{
+    background-color: #fff; /* Green */
+    border-radius: 10px;
+    color: #000;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 3em;
+    margin: 10px;
+}
+
+.footer-second{
+    padding : 0 10%;
+    height:3rem;
+    width: 2rem;
+    
+}
