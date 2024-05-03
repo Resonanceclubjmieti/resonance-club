@@ -70,7 +70,7 @@ style.css * {
 
 #home::before {
     content: "";
-    /* background-color: url('../phtos/IMG-20240207-WA0045.jpg') no-repeat center center/cover; */
+    /* background-color: url('phtos/IMG-20240207-WA0045.jpg') no-repeat center center/cover; */
     position: absolute;
     height: 100%;
     top: 0px;
